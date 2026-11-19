@@ -1,0 +1,48 @@
+/* Design tokens: ajustar aqui com os valores finais do Figma */
+:root {
+  /* Cores */
+  --color-bg: #ffffff;
+  --color-text: #0a0a0a;
+  --color-muted: #5f5f5f;
+  --color-line: #d9d9d9;
+  --color-dark: #0a0a0a;
+  --color-highlight: #fff1e6;
+  --color-highlight-border: #e8833a;
+
+  /* Gradiente EUNICE (barra do header e blobs da home) */
+  --eunice-1: #2a9d8f;
+  --eunice-2: #8ab72d;
+  --eunice-3: #f4b400;
+  --eunice-4: #f08a24;
+  --eunice-5: #d9462f;
+  --eunice-6: #8c3f8f;
+  --eunice-gradient: linear-gradient(
+    90deg,
+    var(--eunice-1),
+    var(--eunice-2),
+    var(--eunice-3),
+    var(--eunice-4),
+    var(--eunice-5),
+    var(--eunice-6)
+  );
+
+  /* Tipografia (o Figma parece usar DM Sans) */
+  --font-sans: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fs-xs: 0.6875rem;
+  --fs-sm: 0.8125rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.25rem;
+  --fs-h2: 1.75rem;
+  --fs-h1: clamp(2.75rem, 7vw, 5.5rem);
+
+  /* Espaçamento e layout */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+  --page-pad: clamp(1rem, 4vw, 3rem);
+  --radius-pill: 999px;
+  --header-h: 5rem;
+}

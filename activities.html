@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activities · EUNICE Portfolio</title>
+    <link rel="stylesheet" href="/src/css/main.css" />
+  </head>
+  <body data-page="activities">
+    <header id="site-header" class="site-header"></header>
+
+    <main class="page">
+      <section class="page__intro">
+        <div>
+          <h1 class="page__title">Activities</h1>
+          <p class="eyebrow">Activity archive</p>
+        </div>
+        <p class="page__lead">Browse EUNICE student activities by theme, year and competency.</p>
+      </section>
+
+      <section class="filters" aria-label="Filters">
+        <div class="filter-group">
+          <p class="filter-group__label">Theme</p>
+          <div class="chips" id="filter-theme"></div>
+        </div>
+        <div class="filter-group">
+          <p class="filter-group__label">Competencies</p>
+          <div class="chips" id="filter-competency"></div>
+        </div>
+        <div class="filter-group">
+          <p class="filter-group__label">Year</p>
+          <div class="chips" id="filter-year"></div>
+        </div>
+      </section>
+
+      <p class="results-count" id="results-count" aria-live="polite"></p>
+      <div class="cards" id="activity-grid"></div>
+    </main>
+
+    <script type="module" src="/src/js/main.js"></script>
+    <script type="module" src="/src/js/pages/activities.js"></script>
+  </body>
+</html>
