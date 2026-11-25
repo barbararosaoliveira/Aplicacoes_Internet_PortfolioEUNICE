@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Share your experience – EUNICE Portfolio</title>
+    <meta name="description" content="Tell other students about the EUNICE activity you took part in: rate it, say which key competences you developed and read the testimonials of other students.">
+    <meta name="author" content="Ana, Bárbara Oliveira, Beatriz Oliveira and Raquel">
+    <meta name="keywords" content="EUNICE, share your experience, testimonials, student experience, rating, key competences">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== Cabeçalho (Beatriz) =====
+         Cópia do cabeçalho do index.html, com esta página marcada (aria-current). -->
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="header-brand" href="index.html"><img src="img/eunice-logo.png" alt="EUNICE European University, home" width="142" height="57"></a>
+            <nav class="main-nav" aria-label="Main navigation">
+                <a class="nav-link" href="index.html#activities">Activities</a>
+                <a class="nav-link" href="competencies.html">Competencies</a>
+                <a class="nav-link active" href="share-your-experience.html" aria-current="page">Share your experience</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== Formulário "Share your experience" (Bárbara e Beatriz) ===== -->
+    <main id="main" class="share-page">
+        <div class="container">
+            <header class="section-intro">
+                <div class="section-intro-title">
+                    <h1>Share your experience</h1>
+                    <p class="section-eyebrow">Testimonials</p>
+                </div>
+                <p class="section-lede">Took part in a EUNICE activity? Tell other students what it was like and which competences you developed.</p>
+            </header>
+            <div id="formulario-testemunhos">
+                <!-- O React substitui este texto pelo formulário.
+                     Falta a ligação mailto: no fim da frase (endereço a definir, ver o CLAUDE.md). -->
+                <p class="no-js-message">To share your experience, please enable JavaScript.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- ===== Rodapé (Beatriz) ===== -->
+    <footer class="site-footer">
+        <div class="footer-layout">
+            <ul class="footer-socials" aria-label="Social media">
+                <li><a class="footer-social-icon" href="https://eunice-university.eu/" target="_blank"><img src="img/icons/rss.svg" alt="Visit the EUNICE website (opens in a new tab)" width="16" height="16"></a></li>
+                <li><a class="footer-social-icon" href="https://www.youtube.com/@euniceuniversity" target="_blank"><img src="img/icons/youtube.svg" alt="Visit EUNICE on YouTube (opens in a new tab)" width="16" height="16"></a></li>
+                <li><a class="footer-social-icon" href="https://www.facebook.com/euniceuniversity" target="_blank"><img src="img/icons/facebook.svg" alt="Visit EUNICE on Facebook (opens in a new tab)" width="16" height="16"></a></li>
+                <li><a class="footer-social-icon" href="https://www.instagram.com/eunice_uni_/" target="_blank"><img src="img/icons/instagram.svg" alt="Visit EUNICE on Instagram (opens in a new tab)" width="16" height="16"></a></li>
+            </ul>
+            <div class="footer-legal">
+                <p>The content of this website represents the views of the authors only and is their sole responsibility. The European Commission and the Agency do not accept any responsibility for use that may be made of the information it contains.</p>
+                <p class="footer-meta"><span>© 2026 EUNICE Portfolio · EUNICE European University</span> <span>Legal notice / Privacy policy</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- O js/pesquisa.js (Ana) entra a seguir ao js/dados.js a 5/12. -->
+    <script src="js/dados.js"></script>
+    <script src="js/vendor/react.production.min.js"></script>
+    <script src="js/vendor/react-dom.production.min.js"></script>
+    <script src="js/formulario.js"></script>
+</body>
+</html>
