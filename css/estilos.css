@@ -7,8 +7,6 @@
  *   EUNICE: azul #2a9db5 · verde #4ca64c · lima #9bbf2e · amarelo #f2b705 · laranja #f07f1a
  *           vermelho #e5432d · roxo #7b3f98
  *
- * Só usa a matéria dada em AI1 (ver o CLAUDE.md). Enquanto o docente não responder, não há
- * border-radius, sombras, transparências, z-index nem position: fixed.
  * Pontos de quebra: 1200 px (cartões), 900 px e 600 px.
  *
  * Cada pessoa só mexe na sua secção, marcada por um comentário com o seu nome.
@@ -17,7 +15,7 @@
 
 /* ===== Base (Bárbara) ===== */
 
-/* DM Sans local: exceção aprovada pelo docente. Cada ficheiro tem o seu nome de família, e o
+/* DM Sans local. Cada ficheiro tem o seu nome de família, e o
    font-family do body usa o segundo para as letras que faltam no primeiro (ex.: o "ń" de "Poznań"). */
 @font-face {
     font-family: "DM Sans";
@@ -79,10 +77,9 @@ textarea {
     padding: 0 24px;
 }
 
-/* Foco: fica o contorno do próprio navegador, que se vê sempre. O outline não está na matéria,
-   por isso nenhuma secção o tira nem o muda. */
+/* Foco: fica o contorno do próprio navegador, que se vê sempre. Nenhuma secção o tira nem o muda. */
 
-/* "Skip to content": fora do ecrã até receber o foco (exceção de acessibilidade). */
+/* "Skip to content": fora do ecrã até receber o foco. */
 .skip-link {
     position: absolute;
     top: 8px;
@@ -98,8 +95,7 @@ textarea {
 }
 
 /* Etiquetas em pílula (categorias e competências), usadas nos cartões e no detalhe. Cada uma é um
-   <li> de uma lista com display: flex e flex-wrap, por isso fica só com a largura do texto.
-   Cantos retos enquanto o border-radius não for aceite. */
+   <li> de uma lista com display: flex e flex-wrap, por isso fica só com a largura do texto. */
 .activity-type {
     display: flex;
     align-items: center;
@@ -115,7 +111,7 @@ textarea {
     text-transform: uppercase;
 }
 
-/* "Reduzir movimento" (exceção de acessibilidade). */
+/* "Reduzir movimento": sem deslocamento suave. */
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
