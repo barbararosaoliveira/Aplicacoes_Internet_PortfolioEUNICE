@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Share your experience – EUNICE Portfolio</title>
     <meta name="description" content="Tell other students about the EUNICE activity you took part in: rate it, say which key competences you developed and read the testimonials of other students.">
-    <meta name="author" content="Ana, Bárbara Oliveira, Beatriz Oliveira and Raquel">
+    <meta name="author" content="Ana Pereira, Bárbara Oliveira, Beatriz Oliveira and Raquel Almeida">
     <meta name="keywords" content="EUNICE, share your experience, testimonials, student experience, rating, key competences">
     <link rel="icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/estilos.css">
@@ -20,10 +20,24 @@
             <a class="header-brand" href="index.html"><img src="img/eunice-logo.png" alt="EUNICE European University, home" width="142" height="57"></a>
             <nav class="main-nav" aria-label="Main navigation">
                 <a class="nav-link" href="index.html#activities">Activities</a>
-                <a class="nav-link" href="competencies.html">Competencies</a>
-                <a class="nav-link active" href="share-your-experience.html" aria-current="page">Share your experience</a>
+                <a class="nav-link" href="competencies.html"><span class="nav-label-desktop">Competencies</span><span class="nav-label-mobile">Skills</span></a>
+                <a class="nav-link active" href="share-your-experience.html" aria-current="page"><span class="nav-label-desktop">Share your experience</span><span class="nav-label-mobile">Share</span></a>
             </nav>
+            <!-- A lupa fica escondida até o js/pesquisa.js (Ana) a mostrar: sem JavaScript, não faria nada. -->
+            <button type="button" class="header-search" id="search-toggle" aria-expanded="false" aria-controls="global-search" style="display: none"><img id="search-toggle-icon" src="img/icons/search.svg" alt="Open search" width="18" height="18"></button>
         </div>
+        <div class="header-gradient"></div>
+        <!-- Painel da pesquisa global: fica escondido até o js/pesquisa.js (Ana) o abrir. -->
+        <section class="global-search" id="global-search" aria-label="Global search" style="display: none">
+            <div class="global-search-inner">
+                <form id="search-form" role="search">
+                    <label class="global-search-label" for="search-input">Search the entire site</label>
+                    <input type="search" id="search-input" class="global-search-input" placeholder="Search for any word or number" autocomplete="off">
+                </form>
+                <p class="global-search-message" id="search-message" aria-live="polite">Search activities, dates, formats, locations, categories or competencies.</p>
+                <ul class="global-search-results" id="search-results"></ul>
+            </div>
+        </section>
     </header>
 
     <!-- ===== Formulário "Share your experience" (Bárbara e Beatriz) ===== -->
@@ -54,7 +68,7 @@
                 <li><a class="footer-social-icon" href="https://www.instagram.com/eunice_uni_/" target="_blank"><img src="img/icons/instagram.svg" alt="Visit EUNICE on Instagram (opens in a new tab)" width="16" height="16"></a></li>
             </ul>
             <div class="footer-legal">
-                <p>The content of this website represents the views of the authors only and is their sole responsibility. The European Commission and the Agency do not accept any responsibility for use that may be made of the information it contains.</p>
+                <p class="footer-disclaimer">The content of this website represents the views of the authors only and is their sole responsibility. The European Commission and the Agency do not accept any responsibility for use that may be made of the information it contains.</p>
                 <p class="footer-meta"><span>© 2026 EUNICE Portfolio · EUNICE European University</span> <span>Legal notice / Privacy policy</span></p>
             </div>
         </div>
